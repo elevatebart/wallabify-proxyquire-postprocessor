@@ -1,8 +1,7 @@
 {
-  "name": "as-js",
-  "version": "8.0.0",
-  "description": "Application Server JS version 8.0",
-  "private": true,
+  "name": "wallabify-proxyquire-postprocessor",
+  "version": "0.0.1",
+  "description": "postprocessor wrapper for wallabify compatibility with proxyquire",
   "dependencies": {
     "wallabify": "0.0.15",
     "proxyquire": "^1.7.3"

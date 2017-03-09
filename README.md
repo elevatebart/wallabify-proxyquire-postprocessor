@@ -1,2 +1,4 @@
 # wallabify-proxyquire-postprocessor
-prepackaging of https://github.com/wallabyjs/wallabify/issues/2
+prepackaging of the solution to the proxyquire issue of wallbify
+
+https://github.com/wallabyjs/wallabify/issues/2
