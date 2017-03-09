@@ -3,7 +3,7 @@ var proxyquireify = require('proxyquireify');
 
 function makePrelude(variableNames) {
 
-    var prelude = require('fs').readFileSync(require('path').join(__dirname, 'node_modules/proxyquireify/lib/prelude.js')).toString();
+    var prelude = require('fs').readFileSync(require('path').join(__dirname, '/../proxyquireify/lib/prelude.js')).toString();
     require('proxyquireify/lib/find-dependencies');
     require.cache[require.resolve('proxyquireify/lib/find-dependencies')].exports = function(src) {
         if (!/require\(.+proxyquireify.+\)/.test(src)) return [];
