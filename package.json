@@ -1,6 +1,6 @@
 {
   "name": "wallabify-proxyquire-postprocessor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "postprocessor wrapper for wallabify compatibility with proxyquire",
   "dependencies": {
     "wallabify": "0.0.15",
