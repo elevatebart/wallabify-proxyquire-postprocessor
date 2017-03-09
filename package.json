@@ -1,0 +1,10 @@
+{
+  "name": "as-js",
+  "version": "8.0.0",
+  "description": "Application Server JS version 8.0",
+  "private": true,
+  "dependencies": {
+    "wallabify": "0.0.15",
+    "proxyquire": "^1.7.3"
+  }
+}
