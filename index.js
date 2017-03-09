@@ -27,4 +27,4 @@ function makePrelude(variableNames) {
 module.exports = function(browserifyOpts, initializer, variableNames){
     browserifyOpts.prelude = makePrelude(variableNames);
     return wallabify(browserifyOpts, initializer);
-}
+};
