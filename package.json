@@ -1,9 +1,19 @@
 {
   "name": "wallabify-proxyquire-postprocessor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "postprocessor wrapper for wallabify compatibility with proxyquire",
   "dependencies": {
     "wallabify": "0.0.15",
     "proxyquire": "^1.7.3"
-  }
+  },
+  "issues": "https://github.com/elevatebart/wallabify-proxyquire-postprocessor/issues",
+  "keywords": [
+    "wallabify",
+    "proxyquire",
+    "wallaby",
+    "browserify",
+    "proxyquirify"
+  ],
+  "author": "Bart Ledoux <ledouxb@me.com>",
+  "license": "MIT"
 }
