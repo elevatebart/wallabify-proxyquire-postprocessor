@@ -17,3 +17,4 @@ var wallabyProxyquirePostprocessor = require('wallabify-proxyquire-postprocessor
     // IMPORTANT: list all variables that you assign like var proxyquire = require('proxyquireify')(require);
     ['proxyquire']
 );
+```
