@@ -1,10 +1,14 @@
 {
   "name": "wallabify-proxyquire-postprocessor",
-  "version": "0.0.4",
-  "description": "postprocessor wrapper for wallabify compatibility with proxyquire",
+  "version": "0.0.5",
+  "description": "Postprocessor wrapper for wallabify compatibility with proxyquire",
   "dependencies": {
     "wallabify": "0.0.15",
     "proxyquire": "^1.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/elevatebart/wallabify-proxyquire-postprocessor.git"
   },
   "issues": "https://github.com/elevatebart/wallabify-proxyquire-postprocessor/issues",
   "keywords": [
