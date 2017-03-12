@@ -10,10 +10,6 @@ var wallabyProxyquirePostprocessor = require('wallabify-proxyquire-postprocessor
       debug: true,
       plugin: ['proxyquire-universal'],
     },
-    function (b) {
-        // we don't need anything but proxyquireify transform
-        return b.transform(require('proxyquireify/lib/transform'));
-    },
     // IMPORTANT: list all variables that you assign like var proxyquire = require('proxyquireify')(require);
     ['proxyquire']
 );

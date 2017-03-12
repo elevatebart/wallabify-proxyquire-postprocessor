@@ -24,7 +24,18 @@ function makePrelude(variableNames) {
     return prelude;
 }
 
-module.exports = function(browserifyOpts, initializer, variableNames){
+module.exports = function(browserifyOpts, arg2, arg3){
+    var variableNames, initializer;
+    if(typeof arg2 === 'object' && arg3 === undefined){
+        variableNames = arg2;
+        initializer = function (b) {
+            // we don't need anything but proxyquireify transform
+            return b.transform(require('proxyquireify/lib/transform'));
+        }
+    }else if(typeof arg2 === 'function' && typeof arg3 === 'object'){
+        initializer = arg2;
+        variableNames = arg3;
+    }
     browserifyOpts.prelude = makePrelude(variableNames);
     return wallabify(browserifyOpts, initializer);
 };
