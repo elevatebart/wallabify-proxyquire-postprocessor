@@ -3,7 +3,7 @@ prepackaging of the solution to the [proxyquire issue of wallabify](https://gith
 
 If you want to contribute or report bugs [GitHub](https://github.com/elevatebart/wallabify-proxyquire-postprocessor)
 
-###Example of use
+### Example
 ``` js
 var wallabyProxyquirePostprocessor = require('wallabify-proxyquire-postprocessor')({
     // browserify options, such as
@@ -14,3 +14,8 @@ var wallabyProxyquirePostprocessor = require('wallabify-proxyquire-postprocessor
     ['proxyquire']
 );
 ```
+
+### Sample
+
+Go check out the sample. Follow the link.
+[Sample](https://github.com/elevatebart/sample-wallabify-proxiquire)
