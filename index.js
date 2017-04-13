@@ -33,7 +33,9 @@ module.exports = function(browserifyOpts, arg2, arg3){
             return b.transform(require('proxyquireify/lib/transform'));
         }
     }else if(typeof arg2 === 'function' && typeof arg3 === 'object'){
-        initializer = arg2;
+        initializer = function(b){
+            return arg2.call(b).transform(require('proxyquireify/lib/transform'));
+        }
         variableNames = arg3;
     }
     browserifyOpts.prelude = makePrelude(variableNames);
