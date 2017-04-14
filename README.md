@@ -10,6 +10,9 @@ var wallabyProxyquirePostprocessor = require('wallabify-proxyquire-postprocessor
       debug: true,
       plugin: ['proxyquire-universal'],
     },
+    // you may also pass an initializer function to chain other
+    // browserify options, such as transformers
+    b => b.exclude('mkdirp').transform(require('babelify')),
     // IMPORTANT: list all variables that you assign like var proxyquire = require('proxyquireify')(require);
     ['proxyquire']
 );
